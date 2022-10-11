@@ -1,6 +1,6 @@
 # FreeRTOS快速入门
 
-[TOC]
+
 
 ## 实时操作系统
 
@@ -21,13 +21,13 @@ FreeRTOS的任务调度策略可以总结为：**固定优先级、抢占式调�
 
 相比于Linux操作系统使用“完全公平的调度策略”——即完全的时间片轮询策略，FreeRTOS则加入了**抢占**的机制，即高优先级的任务可以优先得到运行。
 
-![截屏2022-10-11 下午2.43.18](/Users/chng/Library/Application Support/typora-user-images/截屏2022-10-11 下午2.43.18.png)
+![](https://chng.fun/wp-content/uploads/2022/10/截屏2022-10-11-下午2.43.18-1024x447.png)
 
 （上图：Linux的时间片轮询机制）
 
 FreeRTOS每次任务切换，会在当前的就绪列表中，选出优先级最高的一组任务，在这组任务中进行时间片轮询；只有当高优先级的任务全部阻塞或挂起（即暂时移出就绪列表），低优先级的任务才能进行时间片轮询。
 
-![截屏2022-10-11 下午2.48.12](/Users/chng/Library/Application Support/typora-user-images/截屏2022-10-11 下午2.48.12.png)
+![](https://chng.fun/wp-content/uploads/2022/10/截屏2022-10-11-下午2.48.12-1024x452.png)
 
 （上图：FreeRTOS的调度机制）
 
@@ -37,7 +37,7 @@ FreeRTOS每次任务切换，会在当前的就绪列表中，选出优先级最
 
 - **假设不存在外部中断，处理器的调度如下图：**
 
- ![截屏2022-10-10 上午11.31.37](/Users/chng/Library/Application Support/typora-user-images/截屏2022-10-10 上午11.31.37.png)
+![](https://chng.fun/wp-content/uploads/2022/10/截屏2022-10-10-上午11.31.37-1024x369.png)
 
 Systick中断由硬件产生，优先级最高，在Systick中断中切换上下文。
 
@@ -45,7 +45,7 @@ Systick中断由硬件产生，优先级最高，在Systick中断中切换上下
 
 - **现在引入了外部中断**
 
-![截屏2022-10-10 上午11.33.25](/Users/chng/Library/Application Support/typora-user-images/截屏2022-10-10 上午11.33.25.png)
+![](https://chng.fun/wp-content/uploads/2022/10/截屏2022-10-10-上午11.33.25-1024x455.png)
 
 在外部中断处理程序运行过程中，如果发生了systick中断并进行了上下文切换，原本的中断处理程序会被打断，实时性得不到保障。
 
@@ -55,13 +55,13 @@ Systick中断由硬件产生，优先级最高，在Systick中断中切换上下
 
 - **有外部中断，但是降低了systick的优先级**
 
-![截屏2022-10-10 上午11.37.58](/Users/chng/Library/Application Support/typora-user-images/截屏2022-10-10 上午11.37.58.png)
+![](https://chng.fun/wp-content/uploads/2022/10/截屏2022-10-10-上午11.37.58.png)
 
 看似没有问题，但是，在systick中，系统进行任务调度是需要耗时的，而且在systick中，操作系统需要“**进入临界区**”，也就是**关闭所有中断**，这就导致了在这段时间里如果发生了IRQ，将不会被处理——也不够实时。
 
 - **最佳实践：Systick+SVC+PenSV**（针对arm cortex m系列内核）
 
-![截屏2022-10-10 上午11.41.58_副本](/Users/chng/Desktop/截屏2022-10-10 上午11.41.58_副本.jpg)
+![](https://chng.fun/wp-content/uploads/2022/10/截屏2022-10-10-上午11.41.58_副本-1024x420.jpg)
 
 SVC：系统服务调用，用于调用一些在特权模式下的程序。
 
@@ -87,40 +87,40 @@ PendSV：可延期的系统服务。在SVC或Systick申请一个PendSV调用，P
 
 - 将源码`FreeRTOS-Kernel`目录下所有的`c`文件，拷贝至刚创建的`src`文件夹。
 
-  ![image-20221010131632217](/Users/chng/Library/Application Support/typora-user-images/image-20221010131632217.png)
+![](https://chng.fun/wp-content/uploads/2022/10/image-20221010131632217.png)
 
 - 将源码`FreeRTOS-Kernel/portable`目录下的`MemMang/heap_4.c`、`RVDS/ARM_CM3/port.c`、`RVDS/ARM_CM3/portmacro.h`，拷贝至刚创建的`port`文件夹。
 
-  ![image-20221010131732149](/Users/chng/Library/Application Support/typora-user-images/image-20221010131732149.png)
+![](https://chng.fun/wp-content/uploads/2022/10/image-20221010131732149.png)
 
 - 将源码`FreeRTOS-Kernel/include`目录下的所有文件，拷贝至刚创建的`inc`文件夹。
 
-  ![image-20221010131822922](/Users/chng/Library/Application Support/typora-user-images/image-20221010131822922.png)
+![](https://chng.fun/wp-content/uploads/2022/10/image-20221010131822922.png)
 
 - 在`User`目录中创建`main.c`和`FreeRTOSConfig.h`
 
-  ![image-20221010132319730](/Users/chng/Library/Application Support/typora-user-images/image-20221010132319730.png)
+![](https://chng.fun/wp-content/uploads/2022/10/image-20221010132319730.png)
 
 ### 创建工程
 
 - 打开MDK Keil， 在demo/Project创建工程，选择Cortex m3作为核心，在RTE中添加CMSIS和Startup
 
-  ![image-20221010131941206](/Users/chng/Library/Application Support/typora-user-images/image-20221010131941206.png)
+![](https://chng.fun/wp-content/uploads/2022/10/image-20221010131941206.png)
 
-  ![image-20221010132034731](/Users/chng/Library/Application Support/typora-user-images/image-20221010132034731.png)
+![](https://chng.fun/wp-content/uploads/2022/10/image-20221010132034731.png)
 
 - 创建`User`、`FreeRTOS/src`、`FreeRTOS/port`分组，将User目录下的文件添加至User分组，将FreeRTOS/src目录下的文件添加至FreeRTOS/src分组，将`port.c`和`heap_4.c`添加至`port`分组
 
-  ![image-20221010132139249](/Users/chng/Library/Application Support/typora-user-images/image-20221010132139249.png)
+![](https://chng.fun/wp-content/uploads/2022/10/image-20221010132139249.png)
 
-  ![image-20221010132405642](/Users/chng/Library/Application Support/typora-user-images/image-20221010132405642.png)
+![](https://chng.fun/wp-content/uploads/2022/10/image-20221010132405642.png)
 
 - 将以下路径添加至头文件搜索路径：
   - demo/User
   - demo/FreeRTOS/inc
   - demo/FreeRTOS/port
   
-  ![image-20221010132510075](/Users/chng/Library/Application Support/typora-user-images/image-20221010132510075.png)
+![](https://chng.fun/wp-content/uploads/2022/10/image-20221010132510075.png)
 
 ### 修改配置文件
 
@@ -240,7 +240,7 @@ extern void vAssertCalled( unsigned long ulLine, const char * const pcFileName )
     - main.c
     - FreeRTOSConfig.h —— 配置文件
 - FreeRTOS
-    - inc——头文件
+    - inc
     - src
         - croutine.c —— 协程，除非资源受限，否则不推荐使用
         - event_group.c —— 事件，新版本可被task_notification代替
@@ -261,12 +261,12 @@ extern void vAssertCalled( unsigned long ulLine, const char * const pcFileName )
 
 ### 任务
 
-![截屏2022-10-10 上午1.53.11](/Users/chng/Library/Application Support/typora-user-images/截屏2022-10-10 上午1.53.11.png)
+![](https://chng.fun/wp-content/uploads/2022/10/截屏2022-10-10-上午1.53.11-1024x712.png)
 
 - 就绪：等待被调度器调用
 - 运行：正在运行
-- 阻塞（pend）：任务等待延时到期、等待信号量、等待消息队列、等待事件等
-- 挂起（suspend）：长时间不需要运行的任务可以手动挂起，调度器将完全忽视此任务
+- 阻塞：任务等待延时到期、等待信号量、等待消息队列、等待事件等
+- 挂起：长时间不需要运行的任务可以手动挂起，调度器将完全忽视此任务
 
 #### 创建任务
 
@@ -320,7 +320,7 @@ BaseType_t xTaskResumeFromISR( TaskHandle_t xTaskToResume );
 
 > 注意：如需使用此功能，需在配置中将INCLUDE_vTaskSuspend 设为1
 
-#### 任务延时(阻塞延时)
+#### 任务延时(阻塞)
 
 ```c
 void vTaskDelay( const TickType_t xTicksToDelay );
@@ -704,4 +704,5 @@ size_t xStreamBufferReceiveFromISR( StreamBufferHandle_t xStreamBuffer,
 - 定时器任务不使用中断上下文
 - 在定时器截止前，不会占用CPU的处理时间
 - 不会给systick中断增加额外的负担
+
 
