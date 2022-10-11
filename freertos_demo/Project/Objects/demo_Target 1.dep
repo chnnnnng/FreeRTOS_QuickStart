@@ -1,0 +1,162 @@
+Dependencies for Project 'demo', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
+F (..\User\FreeRTOSConfig.h)(0x6344DECD)()
+F (..\User\main.c)(0x63450A2E)(--gnu -c --cpu Cortex-M3 -D__EVAL --li -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\FreeRTOS\inc -I ..\FreeRTOS\port-I.\RTE\_Target_1-IC:\Users\admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\Device\ARM\ARMCM3\Include-D__UVISION_VERSION="537" -D_RTE_ -DARMCM3 -D_RTE_-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (..\FreeRTOS\inc\FreeRTOS.h)(0x6325F84E)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\User\FreeRTOSConfig.h)(0x6344DECD)
+I (..\FreeRTOS\inc\projdefs.h)(0x6325F84E)
+I (..\FreeRTOS\inc\portable.h)(0x6325F84E)
+I (..\FreeRTOS\inc\deprecated_definitions.h)(0x6325F84E)
+I (..\FreeRTOS\port\portmacro.h)(0x6325F84E)
+I (..\FreeRTOS\inc\mpu_wrappers.h)(0x6325F84E)
+I (..\FreeRTOS\inc\task.h)(0x6325F84E)
+I (..\FreeRTOS\inc\list.h)(0x6325F84E)
+I (..\FreeRTOS\inc\message_buffer.h)(0x6325F84E)
+I (..\FreeRTOS\inc\stream_buffer.h)(0x6325F84E)
+F (..\FreeRTOS\src\croutine.c)(0x6325F84E)(--gnu -c --cpu Cortex-M3 -D__EVAL --li -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\FreeRTOS\inc -I ..\FreeRTOS\port-I.\RTE\_Target_1-IC:\Users\admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\Device\ARM\ARMCM3\Include-D__UVISION_VERSION="537" -D_RTE_ -DARMCM3 -D_RTE_-o .\objects\croutine.o --omf_browse .\objects\croutine.crf --depend .\objects\croutine.d)
+I (..\FreeRTOS\inc\FreeRTOS.h)(0x6325F84E)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\User\FreeRTOSConfig.h)(0x6344DECD)
+I (..\FreeRTOS\inc\projdefs.h)(0x6325F84E)
+I (..\FreeRTOS\inc\portable.h)(0x6325F84E)
+I (..\FreeRTOS\inc\deprecated_definitions.h)(0x6325F84E)
+I (..\FreeRTOS\port\portmacro.h)(0x6325F84E)
+I (..\FreeRTOS\inc\mpu_wrappers.h)(0x6325F84E)
+I (..\FreeRTOS\inc\task.h)(0x6325F84E)
+I (..\FreeRTOS\inc\list.h)(0x6325F84E)
+I (..\FreeRTOS\inc\croutine.h)(0x6325F84E)
+F (..\FreeRTOS\src\event_groups.c)(0x6325F84E)(--gnu -c --cpu Cortex-M3 -D__EVAL --li -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\FreeRTOS\inc -I ..\FreeRTOS\port-I.\RTE\_Target_1-IC:\Users\admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\Device\ARM\ARMCM3\Include-D__UVISION_VERSION="537" -D_RTE_ -DARMCM3 -D_RTE_-o .\objects\event_groups.o --omf_browse .\objects\event_groups.crf --depend .\objects\event_groups.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E3CC2)
+I (..\FreeRTOS\inc\FreeRTOS.h)(0x6325F84E)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\User\FreeRTOSConfig.h)(0x6344DECD)
+I (..\FreeRTOS\inc\projdefs.h)(0x6325F84E)
+I (..\FreeRTOS\inc\portable.h)(0x6325F84E)
+I (..\FreeRTOS\inc\deprecated_definitions.h)(0x6325F84E)
+I (..\FreeRTOS\port\portmacro.h)(0x6325F84E)
+I (..\FreeRTOS\inc\mpu_wrappers.h)(0x6325F84E)
+I (..\FreeRTOS\inc\task.h)(0x6325F84E)
+I (..\FreeRTOS\inc\list.h)(0x6325F84E)
+I (..\FreeRTOS\inc\timers.h)(0x6325F84E)
+I (..\FreeRTOS\inc\event_groups.h)(0x6325F84E)
+F (..\FreeRTOS\src\list.c)(0x6325F84E)(--gnu -c --cpu Cortex-M3 -D__EVAL --li -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\FreeRTOS\inc -I ..\FreeRTOS\port-I.\RTE\_Target_1-IC:\Users\admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\Device\ARM\ARMCM3\Include-D__UVISION_VERSION="537" -D_RTE_ -DARMCM3 -D_RTE_-o .\objects\list.o --omf_browse .\objects\list.crf --depend .\objects\list.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E3CC2)
+I (..\FreeRTOS\inc\FreeRTOS.h)(0x6325F84E)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\User\FreeRTOSConfig.h)(0x6344DECD)
+I (..\FreeRTOS\inc\projdefs.h)(0x6325F84E)
+I (..\FreeRTOS\inc\portable.h)(0x6325F84E)
+I (..\FreeRTOS\inc\deprecated_definitions.h)(0x6325F84E)
+I (..\FreeRTOS\port\portmacro.h)(0x6325F84E)
+I (..\FreeRTOS\inc\mpu_wrappers.h)(0x6325F84E)
+I (..\FreeRTOS\inc\list.h)(0x6325F84E)
+F (..\FreeRTOS\src\queue.c)(0x6325F84E)(--gnu -c --cpu Cortex-M3 -D__EVAL --li -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\FreeRTOS\inc -I ..\FreeRTOS\port-I.\RTE\_Target_1-IC:\Users\admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\Device\ARM\ARMCM3\Include-D__UVISION_VERSION="537" -D_RTE_ -DARMCM3 -D_RTE_-o .\objects\queue.o --omf_browse .\objects\queue.crf --depend .\objects\queue.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
+I (..\FreeRTOS\inc\FreeRTOS.h)(0x6325F84E)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\User\FreeRTOSConfig.h)(0x6344DECD)
+I (..\FreeRTOS\inc\projdefs.h)(0x6325F84E)
+I (..\FreeRTOS\inc\portable.h)(0x6325F84E)
+I (..\FreeRTOS\inc\deprecated_definitions.h)(0x6325F84E)
+I (..\FreeRTOS\port\portmacro.h)(0x6325F84E)
+I (..\FreeRTOS\inc\mpu_wrappers.h)(0x6325F84E)
+I (..\FreeRTOS\inc\task.h)(0x6325F84E)
+I (..\FreeRTOS\inc\list.h)(0x6325F84E)
+I (..\FreeRTOS\inc\queue.h)(0x6325F84E)
+I (..\FreeRTOS\inc\croutine.h)(0x6325F84E)
+F (..\FreeRTOS\src\stream_buffer.c)(0x6325F84E)(--gnu -c --cpu Cortex-M3 -D__EVAL --li -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\FreeRTOS\inc -I ..\FreeRTOS\port-I.\RTE\_Target_1-IC:\Users\admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\Device\ARM\ARMCM3\Include-D__UVISION_VERSION="537" -D_RTE_ -DARMCM3 -D_RTE_-o .\objects\stream_buffer.o --omf_browse .\objects\stream_buffer.crf --depend .\objects\stream_buffer.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
+I (..\FreeRTOS\inc\FreeRTOS.h)(0x6325F84E)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (..\User\FreeRTOSConfig.h)(0x6344DECD)
+I (..\FreeRTOS\inc\projdefs.h)(0x6325F84E)
+I (..\FreeRTOS\inc\portable.h)(0x6325F84E)
+I (..\FreeRTOS\inc\deprecated_definitions.h)(0x6325F84E)
+I (..\FreeRTOS\port\portmacro.h)(0x6325F84E)
+I (..\FreeRTOS\inc\mpu_wrappers.h)(0x6325F84E)
+I (..\FreeRTOS\inc\task.h)(0x6325F84E)
+I (..\FreeRTOS\inc\list.h)(0x6325F84E)
+I (..\FreeRTOS\inc\stream_buffer.h)(0x6325F84E)
+F (..\FreeRTOS\src\tasks.c)(0x6325F84E)(--gnu -c --cpu Cortex-M3 -D__EVAL --li -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\FreeRTOS\inc -I ..\FreeRTOS\port-I.\RTE\_Target_1-IC:\Users\admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\Device\ARM\ARMCM3\Include-D__UVISION_VERSION="537" -D_RTE_ -DARMCM3 -D_RTE_-o .\objects\tasks.o --omf_browse .\objects\tasks.crf --depend .\objects\tasks.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
+I (..\FreeRTOS\inc\FreeRTOS.h)(0x6325F84E)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\User\FreeRTOSConfig.h)(0x6344DECD)
+I (..\FreeRTOS\inc\projdefs.h)(0x6325F84E)
+I (..\FreeRTOS\inc\portable.h)(0x6325F84E)
+I (..\FreeRTOS\inc\deprecated_definitions.h)(0x6325F84E)
+I (..\FreeRTOS\port\portmacro.h)(0x6325F84E)
+I (..\FreeRTOS\inc\mpu_wrappers.h)(0x6325F84E)
+I (..\FreeRTOS\inc\task.h)(0x6325F84E)
+I (..\FreeRTOS\inc\list.h)(0x6325F84E)
+I (..\FreeRTOS\inc\timers.h)(0x6325F84E)
+I (..\FreeRTOS\inc\stack_macros.h)(0x6325F84E)
+F (..\FreeRTOS\src\timers.c)(0x6325F84E)(--gnu -c --cpu Cortex-M3 -D__EVAL --li -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\FreeRTOS\inc -I ..\FreeRTOS\port-I.\RTE\_Target_1-IC:\Users\admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\Device\ARM\ARMCM3\Include-D__UVISION_VERSION="537" -D_RTE_ -DARMCM3 -D_RTE_-o .\objects\timers.o --omf_browse .\objects\timers.crf --depend .\objects\timers.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E3CC2)
+I (..\FreeRTOS\inc\FreeRTOS.h)(0x6325F84E)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\User\FreeRTOSConfig.h)(0x6344DECD)
+I (..\FreeRTOS\inc\projdefs.h)(0x6325F84E)
+I (..\FreeRTOS\inc\portable.h)(0x6325F84E)
+I (..\FreeRTOS\inc\deprecated_definitions.h)(0x6325F84E)
+I (..\FreeRTOS\port\portmacro.h)(0x6325F84E)
+I (..\FreeRTOS\inc\mpu_wrappers.h)(0x6325F84E)
+I (..\FreeRTOS\inc\task.h)(0x6325F84E)
+I (..\FreeRTOS\inc\list.h)(0x6325F84E)
+I (..\FreeRTOS\inc\queue.h)(0x6325F84E)
+I (..\FreeRTOS\inc\timers.h)(0x6325F84E)
+F (..\FreeRTOS\port\heap_4.c)(0x6325F84E)(--gnu -c --cpu Cortex-M3 -D__EVAL --li -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\FreeRTOS\inc -I ..\FreeRTOS\port-I.\RTE\_Target_1-IC:\Users\admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\Device\ARM\ARMCM3\Include-D__UVISION_VERSION="537" -D_RTE_ -DARMCM3 -D_RTE_-o .\objects\heap_4.o --omf_browse .\objects\heap_4.crf --depend .\objects\heap_4.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E3CC2)
+I (..\FreeRTOS\inc\FreeRTOS.h)(0x6325F84E)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\User\FreeRTOSConfig.h)(0x6344DECD)
+I (..\FreeRTOS\inc\projdefs.h)(0x6325F84E)
+I (..\FreeRTOS\inc\portable.h)(0x6325F84E)
+I (..\FreeRTOS\inc\deprecated_definitions.h)(0x6325F84E)
+I (..\FreeRTOS\port\portmacro.h)(0x6325F84E)
+I (..\FreeRTOS\inc\mpu_wrappers.h)(0x6325F84E)
+I (..\FreeRTOS\inc\task.h)(0x6325F84E)
+I (..\FreeRTOS\inc\list.h)(0x6325F84E)
+F (..\FreeRTOS\port\port.c)(0x6325F84E)(--gnu -c --cpu Cortex-M3 -D__EVAL --li -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\FreeRTOS\inc -I ..\FreeRTOS\port-I.\RTE\_Target_1-IC:\Users\admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\Device\ARM\ARMCM3\Include-D__UVISION_VERSION="537" -D_RTE_ -DARMCM3 -D_RTE_-o .\objects\port.o --omf_browse .\objects\port.crf --depend .\objects\port.d)
+I (..\FreeRTOS\inc\FreeRTOS.h)(0x6325F84E)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\User\FreeRTOSConfig.h)(0x6344DECD)
+I (..\FreeRTOS\inc\projdefs.h)(0x6325F84E)
+I (..\FreeRTOS\inc\portable.h)(0x6325F84E)
+I (..\FreeRTOS\inc\deprecated_definitions.h)(0x6325F84E)
+I (..\FreeRTOS\port\portmacro.h)(0x6325F84E)
+I (..\FreeRTOS\inc\mpu_wrappers.h)(0x6325F84E)
+I (..\FreeRTOS\inc\task.h)(0x6325F84E)
+I (..\FreeRTOS\inc\list.h)(0x6325F84E)
+F (RTE/Device/ARMCM3/ARMCM3_ac5.sct)(0x00000000)()
+F (RTE/Device/ARMCM3/startup_ARMCM3.c)(0x626F4ADE)(--gnu -c --cpu Cortex-M3 -D__EVAL --li -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\FreeRTOS\inc -I ..\FreeRTOS\port-I.\RTE\_Target_1-IC:\Users\admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\Device\ARM\ARMCM3\Include-D__UVISION_VERSION="537" -D_RTE_ -DARMCM3 -D_RTE_-o .\objects\startup_armcm3.o --omf_browse .\objects\startup_armcm3.crf --depend .\objects\startup_armcm3.d)
+I (C:\Users\admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\Device\ARM\ARMCM3\Include\ARMCM3.h)(0x626F4ADE)
+I (C:\Users\admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm3.h)(0x626F4ADE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (C:\Users\admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (C:\Users\admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (C:\Users\admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (C:\Users\admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu_armv7.h)(0x626F4ADE)
+I (C:\Users\admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\Device\ARM\ARMCM3\Include\system_ARMCM3.h)(0x626F4ADE)
+F (RTE/Device/ARMCM3/system_ARMCM3.c)(0x626F4ADE)(--gnu -c --cpu Cortex-M3 -D__EVAL --li -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\FreeRTOS\inc -I ..\FreeRTOS\port-I.\RTE\_Target_1-IC:\Users\admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\Device\ARM\ARMCM3\Include-D__UVISION_VERSION="537" -D_RTE_ -DARMCM3 -D_RTE_-o .\objects\system_armcm3.o --omf_browse .\objects\system_armcm3.crf --depend .\objects\system_armcm3.d)
+I (C:\Users\admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\Device\ARM\ARMCM3\Include\ARMCM3.h)(0x626F4ADE)
+I (C:\Users\admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\core_cm3.h)(0x626F4ADE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (C:\Users\admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_version.h)(0x626F4ADE)
+I (C:\Users\admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_compiler.h)(0x626F4ADE)
+I (C:\Users\admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\cmsis_armcc.h)(0x626F4ADE)
+I (C:\Users\admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include\mpu_armv7.h)(0x626F4ADE)
+I (C:\Users\admin\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\Device\ARM\ARMCM3\Include\system_ARMCM3.h)(0x626F4ADE)
